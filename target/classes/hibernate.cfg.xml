@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:sqlite:C:/Users/user1-ivto/Desktop/java/HibernateTest/data.db3</property>
+        <property name="connection.driver_class">org.sqlite.JDBC</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.SQLiteDialect</property>
+        <mapping class="su.logix.hibernate.models.CertificationEntity"/>
+        <mapping class="su.logix.hibernate.models.FacultyEntity"/>
+        <mapping class="su.logix.hibernate.models.KeyEntity"/>
+        <mapping class="su.logix.hibernate.models.OptionEntity"/>
+        <mapping class="su.logix.hibernate.models.ResultEntity"/>
+        <mapping class="su.logix.hibernate.models.StudentEntity"/>
+        <mapping class="su.logix.hibernate.models.SubjectEntity"/>
+        <!-- <property name="connection.username"/> -->
+        <!-- <property name="connection.password"/> -->
+
+        <!-- DB schema will be updated if needed -->
+        <!-- <property name="hbm2ddl.auto">update</property> -->
+    </session-factory>
+</hibernate-configuration>
